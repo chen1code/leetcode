@@ -1,3 +1,4 @@
+/*
 Given two strings s and t, determine if they are isomorphic.
 
 Two strings are isomorphic if the characters in s can be replaced to get t.
@@ -16,7 +17,9 @@ Example 3:
 
 Input: s = "paper", t = "title"
 Output: true
+*/
 
+"""
 解法：创建两空数组sup1与sup2，在相应位置存放对方的字符整型值。之后进行判断
 例子：s = "add"  t = "egg"
 1)s.charAt[0] = 97 t.charAt[0] = 101
@@ -31,9 +34,10 @@ Output: true
 sup1[111] = 97  sup2[97] = 111  ===>这一步在插入值之前，sup1与sup2在相应的位置值是初始值0
 进行到s.charAt[2] = 111  t.charAt[2] = 114
 这是 sup1[111]有值 = 97，而t.charAt[2] = 114 != 97 故返回false
-
-
-1. java
+"""
+"""
+Solution -- java
+"""
 class Solution {
     public boolean isIsomorphic(String s, String t) {
         if(s.length() != t.length()){
