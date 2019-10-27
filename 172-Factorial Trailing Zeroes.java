@@ -1,3 +1,4 @@
+/*
 Given an integer n, return the number of trailing zeroes in n!.
 
 Example 1:
@@ -10,8 +11,12 @@ Example 2:
 Input: 5
 Output: 1
 Explanation: 5! = 120, one trailing zero.
+*/
 
-1. java
+"""
+Solution -- java
+"""
+
 class Solution {
     public int trailingZeroes(int n) {
         // int sum = 1;
