@@ -1,3 +1,4 @@
+/*
 Given a column title as appear in an Excel sheet, return its corresponding column number.
 
 For example:
@@ -22,8 +23,12 @@ Example 3:
 
 Input: "ZY"
 Output: 701
+*/
 
-1. java
+
+"""
+Solution -- java
+"""
 class Solution {
     public int titleToNumber(String s) {
         String alpha = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
