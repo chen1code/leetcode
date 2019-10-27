@@ -1,3 +1,4 @@
+/*
 Table: Person
 
 +-------------+---------+
@@ -24,7 +25,10 @@ AddressId is the primary key column for this table.
 Write a SQL query for a report that provides the following information for each person in the Person table, regardless if there is an address for each of those people:
 
 FirstName, LastName, City, State
+*/
 
-1. mysql
+"""
+Solution -- mysql
+"""
 select FirstName, LastName, City, State from Person LEFT JOIN Address 
 ON Person.PersonId = Address.PersonId
